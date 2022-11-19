@@ -1,7 +1,7 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
+  --font-family: "Poiret One", sans-serif;
   --content-width: 1110px;
   --container-offset: 165px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -16,9 +16,9 @@
     --container-offset: 15px;
   }
 
-  @media (min-width: (320px)) and (max-width: (767px)) {
+  @media (min-width: (375px)) and (max-width: (767px)) {
     --content-width: 500px;
-    --container-offset: 10px;
+    --container-offset: 20px;
   }
 
   // colors

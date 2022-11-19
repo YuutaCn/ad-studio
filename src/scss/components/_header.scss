@@ -4,7 +4,7 @@
   margin-top: 30px;
 
   @include mobile {
-    margin-top: 45px;
+    margin-top: 39px;
   }
 
   &__container {
@@ -36,6 +36,7 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 19px;
+          -webkit-text-stroke: 0.3px var(--black-color);
           background-image: linear-gradient(var(--primary-color), var(--primary-color));
           background-position: 50% 100%;
           background-repeat: no-repeat;
@@ -113,6 +114,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
+      -webkit-text-stroke: 0.3px var(--black-color);
       background-image: linear-gradient(var(--black-color), var(--black-color));
       background-position: 50% 100%;
       background-repeat: no-repeat;
