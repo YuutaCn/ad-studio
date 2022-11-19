@@ -1,0 +1,91 @@
+.about {
+  width: 100%;
+  margin-top: 70px;
+  padding: 100px 0;
+  background: var(--black-color);
+
+  @include small-tablet {
+    padding: 70px 0;
+  }
+
+  @include mobile {
+    margin-top: 50px;
+    padding: 100px 0;
+  }
+
+  &__container {
+    width: 100%;
+  }
+
+  &__title {
+    color: var(--primary-color);
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.3px var(--primary-color);
+  }
+
+  &__list {
+    margin-top: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 40px;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 48px;
+    }
+
+    &-item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      @include mobile {
+        gap: 16px;
+      }
+
+      &_num {
+        color: var(--white-color);
+        -webkit-text-stroke: 3px var(--white-color);
+        font-family: 'Poiret One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 75px;
+
+        @include mobile {
+          font-size: 40px;
+          line-height: 47px;
+        }
+      }
+
+      &_desc {
+        color: var(--white-color);
+        font-family: 'Poiret One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        -webkit-text-stroke: 0.5px var(--white-color);
+        letter-spacing: -0.6px;
+
+        @include mobile {
+          width: 255px;
+          font-size: 24px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
