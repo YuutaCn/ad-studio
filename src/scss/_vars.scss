@@ -2,8 +2,8 @@
 :root {
   // base
   --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
-  --container-offset: 125px;
+  --content-width: 1110px;
+  --container-offset: 165px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   @media (min-width: (1024px)) and (max-width: (1439px)) {
@@ -22,5 +22,10 @@
   }
 
   // colors
-  --light-color: #fff;
+  --white-color: #fff;
+  --black-color: #000;
+  --primary-color: #FFD310;
+
+  // animation
+  --default-cubic: cubic-bezier(.09,.44,.46,.91);
 }
